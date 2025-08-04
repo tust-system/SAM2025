@@ -221,9 +221,18 @@ namespace SAM2025
                     }
 
                     labError.Text += "上傳完成，資料已匯入。";
+
+                    using (SqlConnection connSP = new SqlConnection(ConfigurationManager.ConnectionStrings["SAMConnectionString"].ToString()))
+                    {
+                        SqlCommand cmd = new SqlCommand("usp_UpdateEmpCodeStatus", connSP);
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        connSP.Open();
+                        cmd.ExecuteNonQuery();
+                        connSP.Close();
+                    }
                 }
 
-                //labError.Text += "上傳完成";
+                labError.Text += "異常記錄完成。";
             }
             catch (Exception ex)
             {
