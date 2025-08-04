@@ -1,0 +1,14 @@
+﻿body {
+	background-color: #E1F5C2;
+	margin: 0px;
+}
+.divTop
+{
+	background-image: url('../images/WorkListTitle.jpg');
+}
+.divLeft
+{
+	background-color: #C1F169;
+	width: 140px;
+	height: 579px;
+}

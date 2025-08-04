@@ -1,0 +1,1208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BBC475B9-888D-4FF2-8836-DE6269725ADE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAM2025</RootNamespace>
+    <AssemblyName>SAM2025</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44318</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Antlr3.Runtime.pdb" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\Microsoft.Win32.Primitives.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Console.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.Globalization.Calendars.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.ZipFile.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Net.Http.dll" />
+    <Content Include="bin\roslyn\System.Net.Sockets.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="bin\roslyn\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\SAM2025.dll" />
+    <Content Include="bin\SAM2025.pdb" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Optimization.xml" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="bin\zh-Hant\Microsoft.AspNet.FriendlyUrls.resources.dll" />
+    <Content Include="bin\zh-Hant\System.Web.Optimization.resources.dll" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="css\StyleSheet.css" />
+    <Content Include="css\text_css.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="EmpPCode.aspx" />
+    <Content Include="EmpPCodeAdd.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="images\Calendar_scheduleHS.png" />
+    <Content Include="images\gif-0018.gif" />
+    <Content Include="images\gif-0032.gif" />
+    <Content Include="images\images.jpg" />
+    <Content Include="images\LogImg_01.gif" />
+    <Content Include="images\LogImg_02.gif" />
+    <Content Include="images\LogImg_03.gif" />
+    <Content Include="images\LogImg_04.gif" />
+    <Content Include="images\loginBG.jpg" />
+    <Content Include="images\loginBG_Forget.jpg" />
+    <Content Include="images\LoginNT%28bak%29.jpg" />
+    <Content Include="images\LoginNT.jpg" />
+    <Content Include="images\LoginXP.jpg" />
+    <Content Include="images\NT_Name.gif" />
+    <Content Include="images\NT_Pwd.gif" />
+    <Content Include="images\PidPwd_BG.jpg" />
+    <Content Include="images\SendOK.jpg" />
+    <Content Include="images\WorkListBG.jpg" />
+    <Content Include="images\WorkListTitle.jpg" />
+    <Content Include="IndexPage.aspx" />
+    <Content Include="obj\Debug\SAM2025.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\SAM2025.dll" />
+    <Content Include="obj\Debug\SAM2025.pdb" />
+    <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll" />
+    <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.pdb" />
+    <Content Include="packages\bootstrap.5.2.3\bootstrap.png" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.js" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\js\bootstrap.js" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-grid.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-grid.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-grid.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-reboot.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-reboot.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-reboot.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-utilities.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-utilities.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-utilities.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap.rtl.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap.rtl.min.css" />
+    <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.bundle.js" />
+    <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.bundle.min.js" />
+    <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.esm.js" />
+    <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.esm.min.js" />
+    <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.js" />
+    <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.min.js" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.exe.config" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.Managed.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="bin\SAM2025.dll.config" />
+    <None Include="packages\jQuery.3.7.0\Content\Scripts\jquery-3.7.0-vsdoc.js" />
+    <Content Include="packages\jQuery.3.7.0\Content\Scripts\jquery-3.7.0.js" />
+    <Content Include="packages\jQuery.3.7.0\Content\Scripts\jquery-3.7.0.min.js" />
+    <Content Include="packages\jQuery.3.7.0\Content\Scripts\jquery-3.7.0.slim.js" />
+    <Content Include="packages\jQuery.3.7.0\Content\Scripts\jquery-3.7.0.slim.min.js" />
+    <None Include="packages\jQuery.3.7.0\Tools\jquery-3.7.0.intellisense.js" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\readme.txt" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net40\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net40\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net40\zh-Hant\Microsoft.AspNet.FriendlyUrls.resources.dll" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net40\zh-Hant\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\zh-Hant\Microsoft.AspNet.FriendlyUrls.resources.dll" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\zh-Hant\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.zh-Hant.1.0.2\lib\net40\zh-Hant\Microsoft.AspNet.FriendlyUrls.resources.dll" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.zh-Hant.1.0.2\lib\net40\zh-Hant\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.zh-Hant.1.0.2\lib\net45\zh-Hant\Microsoft.AspNet.FriendlyUrls.resources.dll" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.zh-Hant.1.0.2\lib\net45\zh-Hant\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\DetailsView.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\Focus.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\GridView.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\Menu.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\MenuStandards.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\SmartNav.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\TreeView.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\WebForms.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\WebParts.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\system.web.optimization.xml" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\zh-Hant\System.Web.Optimization.resources.dll" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.zh-Hant.1.1.3\lib\net40\zh-Hant\System.Web.Optimization.resources.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csi.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.AppContext.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Diagnostics.StackTrace.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.IO.FileSystem.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\VBCSCompiler.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Win32.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.AppContext.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Console.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Diagnostics.StackTrace.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Globalization.Calendars.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.Compression.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.Compression.ZipFile.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.FileSystem.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Net.Http.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Net.Sockets.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Text.Encoding.CodePages.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.ValueTuple.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.ReaderWriter.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XmlDocument.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XPath.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\System.Xml.XPath.XDocument.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.2.0.0\NET.icon.png" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.2.0.0\NET_Library_EULA_ENU.txt" />
+    <Content Include="packages\Modernizr.2.8.3\Content\Scripts\modernizr-2.8.3.js" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\net20\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\net35\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\net40\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\net6.0\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\net6.0\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\netstandard1.0\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\netstandard1.0\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\netstandard1.3\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\netstandard1.3\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\netstandard2.0\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\lib\netstandard2.0\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\packageIcon.png" />
+    <Content Include="packages\WebGrease.1.6.0\lib\WebGrease.dll" />
+    <Content Include="packages\WebGrease.1.6.0\tools\WG.EXE" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="file\20161226_20170101.xlsx" />
+    <Content Include="file\cid37_62_2017-02-01_2017-02-21_1814.xlsx" />
+    <Content Include="file\工時預排匯入格式.xls" />
+    <Content Include="file\新北各時段參數匯入範例.xlsx" />
+    <Content Include="file\新北排班匯入範例.%28old%29xlsx" />
+    <Content Include="file\新北排班匯入範例.xlsx" />
+    <Content Include="file\新北話務量匯入範例.xlsx" />
+    <Content Include="file\話務量匯入範例%28舊不用%29.xlsx" />
+    <Content Include="images\leftPic.psd" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\SAM2025.csproj.AssemblyReference.cache" />
+    <Content Include="obj\Debug\SAM2025.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\SAM2025.csproj.Up2Date" />
+    <Content Include="packages\Antlr.3.5.0.2\.signature.p7s" />
+    <Content Include="packages\Antlr.3.5.0.2\Antlr.3.5.0.2.nupkg" />
+    <Content Include="packages\bootstrap.5.2.3\.signature.p7s" />
+    <Content Include="packages\bootstrap.5.2.3\bootstrap.5.2.3.nupkg" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.js.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\js\bootstrap.js.map" />
+    <Content Include="packages\bootstrap.5.2.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-grid.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-grid.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-reboot.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-reboot.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-utilities.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-utilities.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap.rtl.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Content\bootstrap.rtl.min.css.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.bundle.js.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.esm.js.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.js.map" />
+    <Content Include="packages\bootstrap.5.2.3\content\Scripts\bootstrap.min.js.map" />
+    <Content Include="packages\jQuery.3.7.0\.signature.p7s" />
+    <Content Include="packages\jQuery.3.7.0\Content\Scripts\jquery-3.7.0.min.map" />
+    <Content Include="packages\jQuery.3.7.0\Content\Scripts\jquery-3.7.0.slim.min.map" />
+    <Content Include="packages\jQuery.3.7.0\jQuery.3.7.0.nupkg" />
+    <Content Include="packages\jQuery.3.7.0\Tools\common.ps1" />
+    <Content Include="packages\jQuery.3.7.0\Tools\install.ps1" />
+    <Content Include="packages\jQuery.3.7.0\Tools\uninstall.ps1" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\App_Start\RouteConfig.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\Site.Mobile.Master.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\Site.Mobile.Master.designer.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\Site.Mobile.Master.pp" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\ViewSwitcher.ascx.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\ViewSwitcher.ascx.designer.cs.pp" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\ViewSwitcher.ascx.pp" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Microsoft.AspNet.FriendlyUrls.1.0.2.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\Microsoft.AspNet.FriendlyUrls.Core.1.0.2.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.zh-Hant.1.0.2\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.zh-Hant.1.0.2\Microsoft.AspNet.FriendlyUrls.Core.zh-Hant.1.0.2.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\Microsoft.AspNet.ScriptManager.WebForms.5.0.0.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\content\web.config.transform" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.zh-Hant.1.1.3\.signature.p7s" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.zh-Hant.1.1.3\Microsoft.AspNet.Web.Optimization.zh-Hant.1.1.3.nupkg" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\.signature.p7s" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.Extensions.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\app.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\app.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\web.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net45\web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\app.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\app.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\web.config.install.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\content\net46\web.config.uninstall.xdt" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1.nupkg" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\net45\install.ps1" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\net45\uninstall.ps1" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\csi.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.CSharp.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\vbc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\Roslyn45\VBCSCompiler.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\csi.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.CSharp.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.Managed.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.exe.config" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\vbc.rsp" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\tools\RoslynLatest\VBCSCompiler.exe.config" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.2.0.0\.signature.p7s" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.2.0.0\Microsoft.Web.Infrastructure.2.0.0.nupkg" />
+    <Content Include="packages\Modernizr.2.8.3\.signature.p7s" />
+    <Content Include="packages\Modernizr.2.8.3\Modernizr.2.8.3.nupkg" />
+    <Content Include="packages\Modernizr.2.8.3\Tools\common.ps1" />
+    <Content Include="packages\Modernizr.2.8.3\Tools\install.ps1" />
+    <Content Include="packages\Modernizr.2.8.3\Tools\uninstall.ps1" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\.signature.p7s" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\LICENSE.md" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\Newtonsoft.Json.13.0.3.nupkg" />
+    <Content Include="packages\Newtonsoft.Json.13.0.3\README.md" />
+    <Content Include="packages\WebGrease.1.6.0\.signature.p7s" />
+    <Content Include="packages\WebGrease.1.6.0\WebGrease.1.6.0.nupkg" />
+    <None Include="Scripts\jquery-3.7.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.0.js" />
+    <Content Include="Scripts\jquery-3.7.0.min.js" />
+    <Content Include="Scripts\jquery-3.7.0.slim.js" />
+    <Content Include="Scripts\jquery-3.7.0.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Site.Master" />
+    <Content Include="TimeExcelDep.aspx" />
+    <Content Include="TimeExcelInput.aspx" />
+    <Content Include="TimePeriod.aspx" />
+    <Content Include="TimePeriodAdd.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="TimeExcel\Book1.xls" />
+    <Content Include="UpLoad\20120215174755_上傳預排工時_20120206_20120212.xls" />
+    <Content Include="UpLoad\20120221040424_上傳預排工時_工時預排匯入格式.xls" />
+    <Content Include="UpLoad\20120221040822_上傳預排工時_工時預排匯入格式.xls" />
+    <Content Include="UpLoad\20120221040936_上傳預排工時_20120220_20120226.xls" />
+    <Content Include="UpLoad\20150410131942_新北排班_20150309_20150315.xlsx" />
+    <Content Include="UpLoad\20150410132243_新北排班_20150309_20150315.xlsx" />
+    <Content Include="UpLoad\20150410132403_新北排班_20150309_20150315.xlsx" />
+    <Content Include="UpLoad\20150410132540_新北排班_20150309_20150315.xlsx" />
+    <Content Include="UpLoad\20150410132751_新北排班_20150309_20150315.xlsx" />
+    <Content Include="UpLoad\20150410132852_新北排班_20150309_20150315.xlsx" />
+    <Content Include="UpLoad\20150410133306_新北排班_20150309_20150315.xlsx" />
+    <Content Include="UpLoad\20150410133445_新北排班_20150309_20150315.xlsx" />
+    <Content Include="UpLoad\20150410133704_新北排班_20150309_20150315.xlsx" />
+    <Content Include="UpLoad\20150410133901_新北排班_20150309_20150315.xlsx" />
+    <Content Include="UpLoad\20150410134116_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410134250_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410134546_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410134959_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410135031_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410135249_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410135412_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410140106_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410140502_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410140551_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410143500_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410143652_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410145058_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410145209_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410150505_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410151008_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150410151134_新北排班_20150309_20150315.xlsx" />
+    <Content Include="UpLoad\20150410151316_新北排班_20150309_20150315.xlsx" />
+    <Content Include="UpLoad\20150410151336_新北排班_20150309_20150315.xlsx" />
+    <Content Include="UpLoad\20150413133137_新北排班_20150413_20150419.xlsx" />
+    <Content Include="UpLoad\20150520160357_新北排班_20150518_20150524.xlsx" />
+    <Content Include="UpLoad\20150520161103_新北排班_20150511_20150517.xlsx" />
+    <Content Include="UpLoad\20150520173857_新北排班_20150511_20150517.xlsx" />
+    <Content Include="UpLoad\20160802132016_新北排班_排班匯入測試檔.xlsx" />
+    <Content Include="UpLoad\20160802132217_新北排班_20160704_20160710.xls" />
+    <Content Include="UpLoad\20160802132507_新北排班_20160704_20160710.xls" />
+    <Content Include="UpLoad\20160802134114_新北排班_20160704_20160710.xls" />
+    <Content Include="UpLoad\20160802134744_新北排班_20160704_20160710.xls" />
+    <Content Include="UpLoad\20160802140722_新北排班_20160704_20160710.xls" />
+    <Content Include="UpLoad\20160802140759_新北排班_20160704_20160710.xls" />
+    <Content Include="UpLoad\20160802140950_新北排班_20160704_20160710.xls" />
+    <Content Include="UpLoad\20160802141653_新北排班_20160704_20160710.xls" />
+    <Content Include="UpLoad\20160802150750_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160802151051_新北排班_20160704_20160710.xls" />
+    <Content Include="UpLoad\20160802152309_新北排班_20160704_20160710.xls" />
+    <Content Include="UpLoad\20160802152404_新北排班_20160704_20160710.xls" />
+    <Content Include="UpLoad\20160802152838_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160802153525_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160802153546_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160802162312_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160802162454_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160802162741_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160802163145_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160802163514_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160802163902_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160802165942_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160802170119_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160802174129_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160802175437_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160802175702_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160803095505_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160803110601_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160803112540_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160803113024_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160803113135_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160803113333_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160803113730_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804100034_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804101141_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804101415_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804101517_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804102044_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804102227_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804102538_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804102814_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804102917_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804103429_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804103743_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160804103855_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160804103914_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160804104158_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160804104219_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160804104244_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160804104448_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804104526_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804104536_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160804114959_新北排班_20160718_20160724.xlsx" />
+    <Content Include="UpLoad\20160804115512_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160804115606_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160804162318_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160804162528_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804162657_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804162828_新北排班_20160704_20160710.xlsx" />
+    <Content Include="UpLoad\20160804163130_新北排班_20160711_20160717.xlsx" />
+    <Content Include="UpLoad\20160914165015_新北話務量_新北話務量匯入範例.xlsx" />
+    <Content Include="UpLoad\20160914165239_新北話務量_新北話務量匯入範例.xlsx" />
+    <Content Include="UpLoad\20160914165417_新北話務量_新北話務量匯入範例.xlsx" />
+    <Content Include="UpLoad\20160914165536_新北話務量_新北話務量匯入範例.xlsx" />
+    <Content Include="UpLoad\20160914170417_新北話務量_新北話務量匯入範例.xlsx" />
+    <Content Include="UpLoad\20160914170643_新北話務量_新北話務量匯入範例%28去年%29.xlsx" />
+    <Content Include="UpLoad\20160926151445_新北各時段參數_新北各時段參數匯入範例.xlsx" />
+    <Content Include="UpLoad\20160929191954_新北話務量_新北話務量匯入範例%28上月3月%29.xlsx" />
+    <Content Include="UpLoad\20161003103456_新北話務量_新北話務量匯入範例%28去年10%29.xlsx" />
+    <Content Include="UpLoad\20161003103558_新北話務量_新北話務量匯入範例%28上月3月%29.xlsx" />
+    <Content Include="UpLoad\20161003103813_新北話務量_新北話務量匯入範例%28去年10%29.xlsx" />
+    <Content Include="UpLoad\20161003103822_新北話務量_新北話務量匯入範例%28上個月09%29.xlsx" />
+    <Content Include="UpLoad\20161003111920_新北話務量_新北話務量匯入範例%28上個月09%29.xlsx" />
+    <Content Include="UpLoad\20161003121301_新北話務量_新北話務量匯入範例%28去年11%29.xlsx" />
+    <Content Include="UpLoad\20161003121445_新北話務量_新北話務量匯入範例%28去年11%29.xlsx" />
+    <Content Include="UpLoad\20161003125210_新北話務量_新北話務量匯入範例%28上二個月08%29.xlsx" />
+    <Content Include="UpLoad\20161003130209_新北各時段參數_新北各時段參數匯入範例201610.xlsx" />
+    <Content Include="UpLoad\20161006162531_新北排班_20161003_20161009.xlsx" />
+    <Content Include="UpLoad\20161006162623_新北排班_20161003_20161009.xlsx" />
+    <Content Include="UpLoad\20161006163607_新北排班_20161003_20161009.xlsx" />
+    <Content Include="UpLoad\20161006163914_新北排班_20161003_20161009.xlsx" />
+    <Content Include="UpLoad\20161020183639_新北排班_20161031_20161106.xlsx" />
+    <Content Include="UpLoad\20161020184243_新北排班_20161031_20161106.xlsx" />
+    <Content Include="UpLoad\20161020184605_新北排班_20161031_20161106.xlsx" />
+    <Content Include="UpLoad\20161026164447_新北排班_20161107_20161113.xlsx" />
+    <Content Include="UpLoad\20161027145907_新北排班_20161107_20161113.xlsx" />
+    <Content Include="UpLoad\20161208100707_新北排班_20161226_20170101.xlsx" />
+    <Content Include="UpLoad\20161209170557_新北話務量_新北話務量匯入_201611.xlsx" />
+    <Content Include="UpLoad\20161209170918_新北話務量_新北話務量匯入_201611.xlsx" />
+    <Content Include="UpLoad\20161213115952_新北排班_20161205_20161211.xlsx" />
+    <Content Include="UpLoad\20161215161557_新北話務量_新北話務量匯入_201610.xlsx" />
+    <Content Include="UpLoad\20161215162317_新北話務量_新北話務量匯入_201610.xlsx" />
+    <Content Include="UpLoad\20161215163019_新北話務量_新北話務量匯入_201610.xlsx" />
+    <Content Include="UpLoad\20161215163121_新北話務量_新北話務量匯入_201610.xlsx" />
+    <Content Include="UpLoad\20161215163247_新北話務量_新北話務量匯入_201610.xlsx" />
+    <Content Include="UpLoad\20161215163736_新北話務量_新北話務量匯入_201610.xlsx" />
+    <Content Include="UpLoad\20170106120555_新北排班_20161226_20170101.xls" />
+    <Content Include="UpLoad\20170106134341_新北排班_20170102_20170108.xls" />
+    <Content Include="UpLoad\20170106134430_新北排班_20170109_20170115.xls" />
+    <Content Include="UpLoad\20170106134457_新北排班_20170109_20170115.xls" />
+    <Content Include="UpLoad\20170106134632_新北排班_20170116_20170122.xls" />
+    <Content Include="UpLoad\20170106134740_新北排班_20170123_20170129.xls" />
+    <Content Include="UpLoad\20170106134835_新北排班_20170130_20170205.xls" />
+    <Content Include="UpLoad\20170119144503_新北月排班檔_201702.xlsx" />
+    <Content Include="UpLoad\20170119144545_新北月排班檔_201702.xlsx" />
+    <Content Include="UpLoad\20170119144601_新北月排班檔_201702.xlsx" />
+    <Content Include="UpLoad\20170119144722_新北月排班檔_201702.xlsx" />
+    <Content Include="UpLoad\20170119145413_新北月排班檔_201702.xlsx" />
+    <Content Include="UpLoad\20170119145708_新北月排班檔_201702.xlsx" />
+    <Content Include="UpLoad\20170119150218_新北月排班檔_201702.xlsx" />
+    <Content Include="UpLoad\20170119150800_新北月排班檔_201702.xls" />
+    <Content Include="UpLoad\20170119152508_新北月排班檔_201702.xls" />
+    <Content Include="UpLoad\20170119152647_新北月排班檔_201702.xls" />
+    <Content Include="UpLoad\20170119153009_新北月排班檔_201702.xls" />
+    <Content Include="UpLoad\20170119153423_新北月排班檔_201702.xls" />
+    <Content Include="UpLoad\20170119155103_新北排班_20161229173202_新北排班_20161226_20170101.xls" />
+    <Content Include="UpLoad\20170119155142_新北排班_20161226_20170101.xls" />
+    <Content Include="UpLoad\20170119155409_新北月排班檔_201702.xls" />
+    <Content Include="UpLoad\20170119155758_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170119155905_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170119162421_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170119162505_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170119162706_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170119162900_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170119163008_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170119163110_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170119165223_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170119165450_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170119165745_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170119165941_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170119182116_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170120093302_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170120093417_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170120093638_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170120093749_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170120094602_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170120094801_新北排班_201702.xls" />
+    <Content Include="UpLoad\20170120095120_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170120105311_新北月排班_201702-1.xls.xlsx" />
+    <Content Include="UpLoad\20170120113120_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170120113410_新北月排班_201702.xls" />
+    <Content Include="UpLoad\20170120113507_新北月排班_201702-1.xls.xlsx" />
+    <Content Include="UpLoad\20170120113739_新北月排班_201702-1.xls.xlsx" />
+    <Content Include="UpLoad\20170120114106_新北月排班_201702-1.xls.xlsx" />
+    <Content Include="UpLoad\20170120114444_新北月排班_201702-1.xls.xlsx" />
+    <Content Include="UpLoad\20170120114510_新北月排班_201702-1.xls.xlsx" />
+    <Content Include="UpLoad\20170120114830_新北月排班_201702-1.xls.xlsx" />
+    <Content Include="UpLoad\20170120115104_新北月排班_201702-1.xls.xlsx" />
+    <Content Include="UpLoad\20170120123018_新北月排班_201702-1.xls.xlsx" />
+    <Content Include="UpLoad\20170120123747_新北月排班_201701.xlsx" />
+    <Content Include="UpLoad\20170120123857_新北月排班_201701.xlsx" />
+    <Content Include="UpLoad\20170120124010_新北月排班_201701.xlsx" />
+    <Content Include="UpLoad\20170120124047_新北月排班_201701.xlsx" />
+    <Content Include="UpLoad\20170120144409_新北月排班_201702-1.xls.xlsx" />
+    <Content Include="UpLoad\20170123105406_新北月排班_201702.xlsx" />
+    <Content Include="UpLoad\20170123111543_新北月排班_201702.xlsx" />
+    <Content Include="UpLoad\20170123112937_新北月排班_201702.xlsx" />
+    <Content Include="UpLoad\20170207111439_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207111553_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207112001_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207112319_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207112352_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207113612_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207114044_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207115952_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207121329_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207131153_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207142902_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207143004_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207143048_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207143840_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207143932_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207144120_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207145459_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207145912_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207150033_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207150157_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207150321_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207150509_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207150648_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207150842_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207151114_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207151306_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207151451_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207151548_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207151640_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207151750_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207153720_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207155018_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207155457_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207155551_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207155856_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207164032_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207164600_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207165005_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207165805_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207170820_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207172625_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207172738_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207172930_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207173151_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207173514_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207173638_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207173908_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207174154_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207174316_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207174453_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207174704_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207174723_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207174833_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207174848_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207174923_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207175011_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207175453_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207175759_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207181012_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207181347_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207181623_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207181819_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170207182539_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208085457_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208091122_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208091249_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208091550_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208093238_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208093916_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208094027_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208094106_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208094251_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208095151_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208095406_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208100106_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208100432_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208101855_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208102103_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208102445_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208102520_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208102705_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208102840_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208103009_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208103417_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208103559_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208110623_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208134509_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208134606_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170208140934_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209093805_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209093938_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209094126_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209094528_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209095018_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209095133_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209095900_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209100027_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209100303_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209100344_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209101022_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209101248_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209101408_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209104035_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209104149_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209104220_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209104257_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209104422_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209104658_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209105237_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209105347_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209110021_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209110547_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209110628_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209110735_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209111503_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209112031_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209112139_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209112341_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209112510_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209112533_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209112629_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209112729_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209112833_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209113342_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209113429_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209113735_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209113827_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209114110_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209114223_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209114920_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209115008_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209115020_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209115044_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209115144_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209115330_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209115431_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209115456_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209115519_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209115619_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209115715_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209115759_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209115822_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209120049_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209120726_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209131650_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209131851_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209132051_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209132150_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209132352_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209132428_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209132947_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209133300_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209133352_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209133426_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209133505_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209152658_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170209154135_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170210130959_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170210131327_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170210133545_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170210133946_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170210134036_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170210135021_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215110813_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215111036_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215111616_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215111755_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215112131_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215112207_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215112357_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215112407_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215112450_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215112708_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215112902_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215113444_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215113558_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215113616_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215113701_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215113912_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215113934_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215114127_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215114450_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215114620_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215114904_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215115314_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215115552_新北卡鐘資料_cid37_62_2017-02-01_2017-02-07_917.xlsx" />
+    <Content Include="UpLoad\20170215152709_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215153134_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215154507_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215155211_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215155618_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215155718_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215160031_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215160320_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215160457_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215160946_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215161029_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215161806_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215161926_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215162119_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215162423_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215162632_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215162945_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215163351_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215163641_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215165137_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215165244_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215165337_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215165653_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215172139_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215172334_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215172801_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215173009_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215175632_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215175851_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215180018_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215180131_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215180531_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215180656_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215180928_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215181056_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215181606_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215181725_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215182055_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1375.xlsx" />
+    <Content Include="UpLoad\20170215182417_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1380.xlsx" />
+    <Content Include="UpLoad\20170215182445_新北卡鐘資料_cid37_62_2017-02-01_2017-02-14_1380.xlsx" />
+    <Content Include="UpLoad\20170221153622_新北卡鐘資料_cid37_62_2017-02-01_2017-02-21_1805.xls" />
+    <Content Include="UpLoad\20170221153800_新北卡鐘資料_cid37_62_2017-02-01_2017-02-20_1805.xls" />
+    <Content Include="UpLoad\20170221154749_新北卡鐘資料_cid37_62_2017-02-01_2017-02-20_1805.xls" />
+    <Content Include="UpLoad\20170221170338_新北卡鐘資料_cid37_62_2017-02-01_2017-02-21_1814.xlsx" />
+    <Content Include="UpLoad\20170302172732_新北月排班_201702.xlsx" />
+    <Content Include="UpLoad\20170426160234_新北卡鐘資料_cid37_62_2017-03-21_2017-04-20_7195.xlsx" />
+    <Content Include="UpLoad\20170426160654_新北卡鐘資料_cid37_62_2017-03-21_2017-04-20_7195.xlsx" />
+    <Content Include="UpLoad\20170426160835_新北卡鐘資料_cid37_62_2017-03-21_2017-04-20_7195.xlsx" />
+    <Content Include="UpLoad\20170426161309_新北卡鐘資料_cid37_62_2017-03-21_2017-04-20_7195.xlsx" />
+    <Content Include="UpLoad\20170426162315_新北卡鐘資料_cid37_62_2017-03-21_2017-04-20_7195.xlsx" />
+    <Content Include="文件\1CC654D6.tmp" />
+    <Content Include="文件\1月新北出勤表.xlsx" />
+    <Content Include="文件\20120220_20120226%28預排工時上傳格式%29.xls" />
+    <Content Include="文件\201612.xlsx" />
+    <Content Include="文件\匯出106年1月班表.xlsx" />
+    <Content Include="文件\四月話務.xlsx" />
+    <Content Include="文件\四月話務2.xlsx" />
+    <Content Include="文件\排班計算工時Excel檔%28第二版%29.xls" />
+    <Content Include="文件\新北各時段參數匯入範例.xlsx" />
+    <Content Include="文件\新北各時段參數匯入範例201610.xlsx" />
+    <Content Include="文件\新北排班匯入範例.xlsx" />
+    <Content Include="文件\新北班別.xlsx" />
+    <Content Include="文件\新北話務量匯入範例.xlsx" />
+    <Content Include="文件\月排班範例.xlsx" />
+    <Content Include="文件\每日工時注意事項.doc" />
+    <Content Include="文件\班別原始檔.xlsx" />
+    <Content Include="文件\用餐時段xlsx.xlsx" />
+    <Content Include="文件\複本 新北代碼參照.xlsx" />
+    <Content Include="文件\預排工時與人員出勤狀況比對會議_20120209.doc" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\DBUtilERP.cs" />
+    <Content Include="App_Code\Class1.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBUtil.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpPCode.aspx.cs">
+      <DependentUpon>EmpPCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpPCode.aspx.designer.cs">
+      <DependentUpon>EmpPCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpPCodeAdd.aspx.cs">
+      <DependentUpon>EmpPCodeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpPCodeAdd.aspx.designer.cs">
+      <DependentUpon>EmpPCodeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IndexPage.aspx.cs">
+      <DependentUpon>IndexPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndexPage.aspx.designer.cs">
+      <DependentUpon>IndexPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TimeExcelDep.aspx.cs">
+      <DependentUpon>TimeExcelDep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeExcelDep.aspx.designer.cs">
+      <DependentUpon>TimeExcelDep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeExcelInput.aspx.cs">
+      <DependentUpon>TimeExcelInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeExcelInput.aspx.designer.cs">
+      <DependentUpon>TimeExcelInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimePeriod.aspx.cs">
+      <DependentUpon>TimePeriod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimePeriod.aspx.designer.cs">
+      <DependentUpon>TimePeriod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimePeriodAdd.aspx.cs">
+      <DependentUpon>TimePeriodAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimePeriodAdd.aspx.designer.cs">
+      <DependentUpon>TimePeriodAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.0.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52048</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44318/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

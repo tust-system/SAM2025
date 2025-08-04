@@ -1,0 +1,93 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	background:#F1F2E2
+}
+.text1 {
+	font-size: 10pt;
+	font-style: normal;
+	color: #666666;
+	letter-spacing: normal;
+	text-align: left;
+	text-indent: 24pt;
+	word-spacing: normal;
+	line-height: 24pt;
+	margin: 0px 24px 24px;
+}
+.Title_intext {
+	font-size: 10pt;
+	color: #666666;
+	line-height: 24pt;
+	right: 0pt;
+	text-align: left;
+	vertical-align: baseline;
+	padding: 0px;
+	text-indent: 24pt;
+	margin: 20px;
+}
+td_bg1
+{
+    background-color: #99CCFF;
+}
+td_bg2
+{
+    background-color: #C4E1FF;
+}
+.TableCS1
+{
+    border: 5px solid #81BB64;
+    padding: 2px;
+    margin: 2px;
+    width: 600px;
+    background-color: #FFFF99;
+}
+.sty_1_L
+{
+    font-size: 9pt;
+    text-align: left;
+    background-color: #F1F55A;
+    }
+.sty_2_L
+{
+	font-size: 9pt;
+	background-color: #FFFF99;
+	width: 100%;
+}
+.sty_1_AL
+{
+    font-size: 9pt;
+    text-align: left;
+    background-color: #F1F55A;         
+}
+.sty_2_AL
+{
+    font-size: 9pt;
+    text-align: left;
+    background-color: #FFFF99;
+    width: 220px;
+}                    
+.sty_1_R
+{
+    font-size: 9pt;
+    text-align: right;
+    background-color: #F1F55A;
+}
+.sty_2_R
+{
+    font-size: 9pt;
+    text-align: right;
+    background-color: #FFFF99;
+}
+.sty_2_L_big
+{
+    font-size: 9pt;
+    text-align: left;
+    background-color: #FFFF99;
+}
+.Table_A1
+{
+    font-size: 9pt;
+    text-align: left;
+    vertical-align: top;
+	width: 661px;
+}

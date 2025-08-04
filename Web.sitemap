@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap enableLocalization="true" xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="" title="">
+    <!--<siteMapNode url="" title="高雄排班" description="" >
+      <siteMapNode url="PlanWorkHContrastQuery.aspx" title="預排和實際比較"  description="預排和實際比較" />
+      <siteMapNode url="PlanWorkHDifference.aspx" title="預排和實際差"  description="預排和實際差" />
+		  <siteMapNode url="PlanWorkQuery.aspx" title="預排查詢"  description="預排查詢" />
+      <siteMapNode url="WorkQuery.aspx" title="工時統計"  description="工時統計" />
+      <siteMapNode url="PlanExcelInput.aspx" title="高雄排班檔匯入"  description="排班檔匯入" />
+    </siteMapNode>-->
+    <siteMapNode url="" title="新北排班" description="" >
+      <siteMapNode url="NewTapeiACDInput.aspx" title="1.進線量匯入"  description="1.新北月進線量匯入" />
+      <siteMapNode url="NewTapeiACDPlanShow.aspx" title="2.進線量預估"  description="2.新北月進線量預估顯示" />
+      <siteMapNode url="NewTapeiHouseExcel.aspx" title="3.微調時段參數匯入"  description="3.新北各時段參數匯入" />
+      <siteMapNode url="NewTapeiHouseWorkersShow.aspx" title="4.各時段預估人力"  description="4.新北各時段預估人力" />
+      <siteMapNode url="PlanExcelInputNewTapeiMonth.aspx" title="5.月預排班檔匯入"  description="5.新北一月預排班檔匯入" />
+      <siteMapNode url="NewTapeiCountQuery.aspx" title="6.查詢日預排班人力"  description="6.新北查詢單日預排班人力" />
+      <siteMapNode url="NewTapeiMonthCountQuery.aspx" title="7.查詢月排班人力"  description="7.查詢月排班人力" />
+      <siteMapNode url="NewTapeiMonthDiffQuery.aspx" title="8.月排班人力差值查詢"  description="8.月排班人力差值查詢" />
+      <siteMapNode url="NewTapeiMonthWorkQuery.aspx" title="9.月排班休假總表查詢"  description="9.月排班休假總表查詢" />
+      <siteMapNode url="NewTapeiCode.aspx" title="新北班別管理"  description="新北班別管理查詢調整刪除" />
+      <siteMapNode url="NewTapeiKeyin.aspx" title="新北手動輸入排班"  description="新北手動輸入排班" />
+      <siteMapNode url="NewTapeiPAcc.aspx" title="新北每月預排統計"  description="新北每月預排統計" />
+      <siteMapNode url="NewTapeiRelAcc.aspx" title="新北每月實際假況統計"  description="新北每月實際假況統計" />
+      <siteMapNode url="NTTimeExcelInput.aspx" title="新北卡鐘匯入"  description="新北卡鐘匯入" />
+      <siteMapNode url="NTTimeExcelMonthQuery.aspx" title="新北月簽到狀況"  description="新北月簽到狀況" />
+      <siteMapNode url="NTTimeExcelMonthEdit.aspx" title="新北月簽到補假"  description="新北月簽到補假" />
+      <!--<siteMapNode url="NewTapeiRCode.aspx" title="新北休息管理"  description="新北休息管理" />
+      <siteMapNode url="NewTapeiCodeACD.aspx" title="新北進線量管理"  description="*新北進線量管理" />-->     
+    </siteMapNode>    
+  </siteMapNode>
+</siteMap>
